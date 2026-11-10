@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.vite/
+*.local
+.DS_Store
+
+# 本地项目数据（memory 等），非源码，不应入库
+.workbuddy/
+
+# 切勿提交密钥 / 环境变量（本项目 Key 仅存浏览器本地，不应出现在仓库）
+.env
+.env.*
+!.env.example

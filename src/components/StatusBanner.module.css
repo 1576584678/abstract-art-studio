@@ -1,0 +1,52 @@
+.banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+}
+
+.error {
+  background: var(--danger-soft);
+  border: 1px solid #fecaca;
+  color: var(--danger);
+}
+
+.ok {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: var(--ok);
+}
+
+.icon {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.msg {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.retry {
+  border: 1px solid var(--danger);
+  background: #fff;
+  color: var(--danger);
+  font-weight: 600;
+  font-size: 12px;
+  padding: 5px 12px;
+  border-radius: 8px;
+}
+
+.retry:hover {
+  background: var(--danger);
+  color: #fff;
+}

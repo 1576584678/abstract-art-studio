@@ -1,0 +1,114 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  text-align: left;
+  padding: 12px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  border-color: var(--primary);
+}
+
+.active {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-soft);
+}
+
+.swatch {
+  width: 100%;
+  height: 56px;
+  border-radius: 8px;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.desc {
+  font-size: 12px;
+  color: var(--text-mut);
+  line-height: 1.4;
+}
+
+.slider {
+  background: var(--surface-2);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+}
+
+.sliderHead {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.val {
+  color: var(--primary-600);
+}
+
+.slider input[type="range"] {
+  width: 100%;
+  accent-color: var(--primary);
+}
+
+.scaleBt {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--text-mut);
+  margin-top: 2px;
+}
+
+.addLabel {
+  display: block;
+}
+
+.addLabel > span {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.addLabel textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  font-size: 14px;
+  resize: vertical;
+  color: var(--text);
+}
+
+.addLabel textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+}
